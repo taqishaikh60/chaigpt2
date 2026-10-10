@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": null,
+  "outputDirectory": "frontend",
+  "rewrites": [
+    { "source": "/chat", "destination": "/chat.html" },
+    { "source": "/staff", "destination": "/staff.html" }
+  ]
+}

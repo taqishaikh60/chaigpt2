@@ -18,3 +18,9 @@ Zara remembers the current topic within a server session: “add large Americano
 UI guidance is saved in [design-system/cafebot/MASTER.md](design-system/cafebot/MASTER.md). Review findings, screenshots, verification results, and remaining launch requirements are in [docs/UI-UX-AUDIT.md](docs/UI-UX-AUDIT.md).
 
 Run `node scripts/audit-ui.cjs` when Node, Playwright, and Microsoft Edge are available; the script saves screenshots and results under `docs/ui-audit/`. Business details are samples, and fonts/photos require internet access.
+
+## Vercel website deployment
+
+Keep Vercel's **Root Directory** empty (the repository root). The root `vercel.json` selects the Other framework preset, disables the build command, and publishes `frontend/` as the static output directory. `/` serves the café website; `/chat` and `/staff` route to their HTML pages.
+
+This configuration deploys the website files only. Zara's `/api/chat` endpoint and staff order API still require the Node server. Vercel does not start `node backend/server.js` from this static configuration. The current in-memory sessions and local JSON order storage require a persistent Node host or a separate serverless storage adaptation before online ordering will work. No production order functionality is claimed by this deployment.
