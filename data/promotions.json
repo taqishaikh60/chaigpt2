@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "is_sample": true,
+  "currency": "USD",
+  "application_rules": {
+    "active_only": true,
+    "stacking_allowed": false,
+    "maximum_promotions_per_order": 1,
+    "require_all_eligibility_conditions": true,
+    "unknown_eligibility_is_ineligible": true,
+    "selection": "If multiple active promotions qualify, apply the single promotion with the greatest discount. Break equal-discount ties by ascending promotion ID.",
+    "calculation": "Calculate discounts on eligible base-size prices before tax and fees. Exclude optional add-on charges. Round the final discount to two decimal places using half-up rounding; never exceed the eligible amount.",
+    "verification": "These promotions are fictional samples. They may be calculated for sample drafts only until approved by cafe management. Active status does not establish live business approval. CafeBot must not offer or apply inactive promotions or assume eligibility when required facts are missing."
+  },
+  "promotions": [
+    {
+      "id": "coffee-and-croissant",
+      "name": "Coffee & Croissant Pair",
+      "rule": "Buy at least one available coffee-category item and one available Butter Croissant in the same order. Discount one Butter Croissant per order.",
+      "discount": {
+        "type": "fixed_amount",
+        "amount": 1.0,
+        "target": "butter-croissant",
+        "maximum_discounted_units": 1
+      },
+      "eligibility": {
+        "required_category": "coffee",
+        "minimum_category_quantity": 1,
+        "required_item_id": "butter-croissant",
+        "minimum_item_quantity": 1,
+        "available_items_only": true
+      },
+      "active": true
+    },
+    {
+      "id": "gather-around",
+      "name": "Gather Around",
+      "rule": "Receive 10% off the eligible menu subtotal when the order contains at least four available drink items across the coffee and tea categories. Maximum discount is $5.00 per order.",
+      "discount": {
+        "type": "percentage",
+        "percent": 10,
+        "target": "eligible_menu_subtotal",
+        "maximum_discount": 5.0
+      },
+      "eligibility": {
+        "qualifying_categories": ["coffee", "tea"],
+        "minimum_combined_quantity": 4,
+        "discounted_categories": ["coffee", "tea", "bakery", "food"],
+        "available_items_only": true
+      },
+      "active": true
+    },
+    {
+      "id": "cold-brew-break",
+      "name": "Cold Brew Break",
+      "rule": "Receive 20% off one available Cold Brew per order. This promotion is inactive and must not be offered or applied.",
+      "discount": {
+        "type": "percentage",
+        "percent": 20,
+        "target": "cold-brew",
+        "maximum_discounted_units": 1,
+        "unit_selection": "lowest_base_size_price"
+      },
+      "eligibility": {
+        "required_item_id": "cold-brew",
+        "minimum_item_quantity": 1,
+        "available_items_only": true
+      },
+      "active": false
+    }
+  ]
+}

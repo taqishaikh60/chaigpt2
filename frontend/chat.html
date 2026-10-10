@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f1e8">
+  <title>CaféBot — A little conversation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&amp;family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="chat.css">
+  <script src="chat.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#message">Skip to message field</a>
+  <header class="page-header">
+    <a class="wordmark" href="index.html" aria-label="CaféBot home">cafébot<span>®</span></a>
+    <a class="back-link" href="index.html">Back to the café <span aria-hidden="true">↗</span></a>
+  </header>
+  <main class="chat-layout">
+    <aside class="intro" aria-labelledby="intro-title">
+      <p class="eyebrow">A LITTLE CONVERSATION</p>
+      <h1 id="intro-title">Good coffee.<br><em>Great company.</em></h1>
+      <p class="intro-copy">Find your next favorite, explore our menu, or just say hello. There’s always room for a little conversation.</p>
+      <div class="intro-mark" aria-hidden="true"><svg viewBox="0 0 100 100" fill="none"><path d="M50 8v84M8 50h84M20 20l60 60M20 80l60-60" stroke="currentColor" stroke-width="2"/></svg></div>
+      <div class="demo-note"><span class="demo-label">MENU ASSISTANT</span><p>Zara uses our sample menu and validated draft orders. Confirmed drafts are saved locally; no payments or café submissions.</p></div>
+    </aside>
+    <section class="chat-panel" aria-labelledby="chat-title">
+      <header class="chat-header">
+        <span class="avatar" aria-hidden="true">c.</span>
+        <div><h2 id="chat-title">CaféBot</h2><p>Your café companion</p></div>
+        <span class="demo-badge">Menu assistant</span>
+      </header>
+      <div class="conversation" role="log" aria-label="Conversation with CaféBot" aria-live="polite" aria-relevant="additions text" tabindex="0">
+        <p class="conversation-date">A fresh conversation</p>
+        <article class="message bot-message"><p class="speaker">Zara</p><div class="bubble"><p>Hi, I’m Zara! I can help with menu prices, dietary questions, and sample orders. Try “show me the menu” or “add 2 large Americanos”.</p></div></article>
+      </div>
+      <div class="suggestions" aria-label="Suggested messages">
+        <button type="button" disabled data-prompt="Show me the sample menu">Explore the menu <span aria-hidden="true">↗</span></button>
+        <button type="button" disabled data-prompt="What are the sample opening hours?">Opening hours <span aria-hidden="true">↗</span></button>
+        <button type="button" disabled data-prompt="Do you have dietary information?">Dietary questions <span aria-hidden="true">↗</span></button>
+        <button type="button" disabled data-prompt="my order">My order</button>
+        <button type="button" disabled data-prompt="pickup">Pickup</button>
+        <button type="button" disabled data-prompt="delivery">Delivery</button>
+        <button type="button" disabled data-prompt="checkout">Checkout</button>
+      </div>
+      <form class="composer">
+        <label for="message">Your message</label>
+        <div class="input-row"><textarea id="message" name="message" disabled rows="2" maxlength="1000" placeholder="What’s on your mind?" aria-describedby="input-hint" required></textarea><button class="send-button" type="submit" disabled><span>Send</span><svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="m5 12 14 0m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+        <p id="input-hint">Enter to send · Shift + Enter for a new line · Sample menu and orders</p>
+        <p id="chat-status" role="status" aria-live="polite"></p>
+      </form>
+      <noscript><p class="no-script">Enable JavaScript to chat with Zara.</p></noscript>
+    </section>
+  </main>
+  <footer class="page-footer"><span>A little pause. A better day.</span><span>COFFEE FIRST. ALWAYS.</span></footer>
+</body>
+</html>

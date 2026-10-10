@@ -1,0 +1,162 @@
+{
+  "layouts": [
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "smallTargets": [],
+      "brokenAnchors": [],
+      "cards": 3,
+      "menuImageHeights": [
+        250.90625,
+        250.90625,
+        250.90625
+      ]
+    },
+    {
+      "width": 375,
+      "scrollWidth": 375,
+      "smallTargets": [],
+      "brokenAnchors": [],
+      "cards": 3,
+      "menuImageHeights": [
+        300.90625,
+        300.90625,
+        300.90625
+      ]
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "smallTargets": [],
+      "brokenAnchors": [],
+      "cards": 3,
+      "menuImageHeights": [
+        314.53125,
+        314.53125,
+        314.53125
+      ]
+    },
+    {
+      "width": 600,
+      "scrollWidth": 600,
+      "smallTargets": [],
+      "brokenAnchors": [],
+      "cards": 3,
+      "menuImageHeights": [
+        487.265625,
+        487.265625,
+        487.265625
+      ]
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "smallTargets": [],
+      "brokenAnchors": [],
+      "cards": 3,
+      "menuImageHeights": [
+        300.546875,
+        300.546875,
+        278.828125
+      ]
+    },
+    {
+      "width": 860,
+      "scrollWidth": 860,
+      "smallTargets": [],
+      "brokenAnchors": [],
+      "cards": 3,
+      "menuImageHeights": [
+        338.171875,
+        338.171875,
+        278.828125
+      ]
+    },
+    {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "smallTargets": [],
+      "brokenAnchors": [],
+      "cards": 3,
+      "menuImageHeights": [
+        262.296875,
+        262.3125,
+        262.296875
+      ]
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "smallTargets": [],
+      "brokenAnchors": [],
+      "cards": 3,
+      "menuImageHeights": [
+        375.75,
+        375.75,
+        375.765625
+      ]
+    },
+    {
+      "width": 1920,
+      "scrollWidth": 1920,
+      "smallTargets": [],
+      "brokenAnchors": [],
+      "cards": 3,
+      "menuImageHeights": [
+        383.015625,
+        383.015625,
+        383.03125
+      ]
+    }
+  ],
+  "images": [
+    {
+      "alt": "A barista pouring hot water over a filter to brew fresh coffee",
+      "loaded": true,
+      "responsive": true
+    },
+    {
+      "alt": "A welcoming café interior with wooden tables, plants, and natural light",
+      "loaded": true,
+      "responsive": true
+    },
+    {
+      "alt": "Rich espresso in a white cup",
+      "loaded": true,
+      "responsive": true
+    },
+    {
+      "alt": "Iced coffee served in a tall glass",
+      "loaded": true,
+      "responsive": true
+    },
+    {
+      "alt": "Golden flaky croissants freshly baked and ready to serve",
+      "loaded": true,
+      "responsive": true
+    },
+    {
+      "alt": "Cozy café seating with warm lighting and an inviting atmosphere",
+      "loaded": true,
+      "responsive": true
+    }
+  ],
+  "textReflow": {
+    "width": 320,
+    "scrollWidth": 320
+  },
+  "errors": [],
+  "checks": [
+    "44×44px link targets",
+    "no horizontal overflow",
+    "section anchors",
+    "menu content",
+    "keyboard skip link",
+    "hero and visit navigation",
+    "directions destination and isolation",
+    "reduced motion",
+    "responsive image sources",
+    "200% text with spacing overrides at 320px"
+  ],
+  "note": "External map destination is inspected without opening it. Full screen-reader and WCAG audits are manual follow-ups."
+}

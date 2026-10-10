@@ -1,0 +1,4 @@
+interface:
+  display_name: "UI/UX"
+  short_description: "Design, build, and review usable interfaces"
+  default_prompt: "Use $ui-ux to design, implement, or review this interface and improve its usability."

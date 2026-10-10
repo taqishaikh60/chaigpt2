@@ -1,0 +1,16 @@
+# Local credentials and environment configuration
+.env
+.env.*
+!.env.example
+
+# Local customer order records
+data/orders.json
+data/orders.json.*
+
+# Dependencies, temporary files, and logs
+node_modules/
+*.log
+.figma-transfer.*
+scripts/.preview.cjs
+.DS_Store
+Thumbs.db

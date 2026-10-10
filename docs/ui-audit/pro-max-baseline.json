@@ -1,0 +1,12 @@
+{
+  "targets": [
+    {
+      "text": "Visit us",
+      "width": 40.609375
+    }
+  ],
+  "reflow": {
+    "width": 320,
+    "scrollWidth": 423
+  }
+}

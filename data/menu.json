@@ -1,0 +1,524 @@
+{
+  "schema_version": 1,
+  "is_sample": true,
+  "currency": "USD",
+  "notes": {
+    "prices": "Sample prices exclude tax and any service fees. Item price equals the default size price; size prices are absolute, not surcharges. Option price_delta is added once per selected option per unit.",
+    "options": "Options are optional add-ons, selected at most once per item unit. They do not remove base ingredients. Unlisted substitutions require staff verification.",
+    "allergens": "Allergen lists describe fictional base recipes. Selected options add their listed allergens. An empty list is not a guarantee of allergen-free preparation.",
+    "dietary": "Dietary flags describe the fictional base recipe only, without optional add-ons. Gluten-free means no gluten-containing ingredients in that sample recipe, not certified gluten-free preparation.",
+    "availability": "Availability is fictional sample data, not live inventory. Verify prices, recipes, allergens, dietary suitability, and stock with cafe staff before use.",
+    "cross_contact": "Shared preparation areas may involve milk, wheat, egg, tree nuts, soy, and sesame; staff must verify actual cross-contact risks."
+  },
+  "categories": [
+    {
+      "id": "coffee",
+      "name": "Coffee"
+    },
+    {
+      "id": "tea",
+      "name": "Tea & Matcha"
+    },
+    {
+      "id": "bakery",
+      "name": "Fresh Bakes"
+    },
+    {
+      "id": "food",
+      "name": "Light Bites"
+    }
+  ],
+  "items": [
+    {
+      "id": "house-espresso",
+      "category": "coffee",
+      "name": "House Espresso",
+      "description": "Hot espresso with chocolate and toasted-nut tasting notes; no nuts are included in the sample recipe.",
+      "price": 3.5,
+      "sizes": [
+        {
+          "name": "Double shot (2 fl oz)",
+          "price": 3.5,
+          "default": true
+        }
+      ],
+      "options": [
+        {
+          "id": "extra-shot",
+          "name": "Extra espresso shot",
+          "price_delta": 1.0,
+          "allergens": []
+        }
+      ],
+      "allergens": [],
+      "dietary": {
+        "vegetarian": true,
+        "vegan": true,
+        "gluten_free": true
+      },
+      "available": true
+    },
+    {
+      "id": "americano",
+      "category": "coffee",
+      "name": "Americano",
+      "description": "Espresso topped with hot water for a smooth, full-bodied cup.",
+      "price": 4.0,
+      "sizes": [
+        {
+          "name": "Small (8 fl oz)",
+          "price": 4.0,
+          "default": true
+        },
+        {
+          "name": "Regular (12 fl oz)",
+          "price": 4.5,
+          "default": false
+        },
+        {
+          "name": "Large (16 fl oz)",
+          "price": 5.0,
+          "default": false
+        }
+      ],
+      "options": [
+        {
+          "id": "extra-shot",
+          "name": "Extra espresso shot",
+          "price_delta": 1.0,
+          "allergens": []
+        },
+        {
+          "id": "vanilla-syrup",
+          "name": "Vanilla syrup",
+          "price_delta": 0.5,
+          "allergens": []
+        }
+      ],
+      "allergens": [],
+      "dietary": {
+        "vegetarian": true,
+        "vegan": true,
+        "gluten_free": true
+      },
+      "available": true
+    },
+    {
+      "id": "cappuccino",
+      "category": "coffee",
+      "name": "Cappuccino",
+      "description": "Hot espresso with steamed dairy milk and a thick layer of foam.",
+      "price": 4.75,
+      "sizes": [
+        {
+          "name": "Small (8 fl oz)",
+          "price": 4.75,
+          "default": true
+        },
+        {
+          "name": "Regular (12 fl oz)",
+          "price": 5.25,
+          "default": false
+        }
+      ],
+      "options": [
+        {
+          "id": "extra-shot",
+          "name": "Extra espresso shot",
+          "price_delta": 1.0,
+          "allergens": []
+        },
+        {
+          "id": "vanilla-syrup",
+          "name": "Vanilla syrup",
+          "price_delta": 0.5,
+          "allergens": []
+        }
+      ],
+      "allergens": [
+        "milk"
+      ],
+      "dietary": {
+        "vegetarian": true,
+        "vegan": false,
+        "gluten_free": true
+      },
+      "available": true
+    },
+    {
+      "id": "vanilla-cloud-latte",
+      "category": "coffee",
+      "name": "Vanilla Cloud Latte",
+      "description": "Espresso, vanilla syrup, and dairy milk served over ice.",
+      "price": 5.5,
+      "sizes": [
+        {
+          "name": "Regular (12 fl oz)",
+          "price": 5.5,
+          "default": true
+        },
+        {
+          "name": "Large (16 fl oz)",
+          "price": 6.25,
+          "default": false
+        }
+      ],
+      "options": [
+        {
+          "id": "extra-shot",
+          "name": "Extra espresso shot",
+          "price_delta": 1.0,
+          "allergens": []
+        }
+      ],
+      "allergens": [
+        "milk"
+      ],
+      "dietary": {
+        "vegetarian": true,
+        "vegan": false,
+        "gluten_free": true
+      },
+      "available": true
+    },
+    {
+      "id": "cold-brew",
+      "category": "coffee",
+      "name": "Cold Brew",
+      "description": "Slow-steeped black coffee served over ice with a mellow finish.",
+      "price": 4.5,
+      "sizes": [
+        {
+          "name": "Regular (12 fl oz)",
+          "price": 4.5,
+          "default": true
+        },
+        {
+          "name": "Large (16 fl oz)",
+          "price": 5.25,
+          "default": false
+        }
+      ],
+      "options": [
+        {
+          "id": "vanilla-syrup",
+          "name": "Vanilla syrup",
+          "price_delta": 0.5,
+          "allergens": []
+        }
+      ],
+      "allergens": [],
+      "dietary": {
+        "vegetarian": true,
+        "vegan": true,
+        "gluten_free": true
+      },
+      "available": true
+    },
+    {
+      "id": "chai-latte",
+      "category": "tea",
+      "name": "Chai Latte",
+      "description": "Hot black tea with cinnamon, ginger, cardamom, and steamed dairy milk.",
+      "price": 5.0,
+      "sizes": [
+        {
+          "name": "Regular (12 fl oz)",
+          "price": 5.0,
+          "default": true
+        },
+        {
+          "name": "Large (16 fl oz)",
+          "price": 5.75,
+          "default": false
+        }
+      ],
+      "options": [
+        {
+          "id": "extra-shot",
+          "name": "Extra espresso shot",
+          "price_delta": 1.0,
+          "allergens": []
+        }
+      ],
+      "allergens": [
+        "milk"
+      ],
+      "dietary": {
+        "vegetarian": true,
+        "vegan": false,
+        "gluten_free": true
+      },
+      "available": true
+    },
+    {
+      "id": "matcha-latte",
+      "category": "tea",
+      "name": "Matcha Latte",
+      "description": "Whisked matcha with steamed dairy milk, served hot and unsweetened.",
+      "price": 5.25,
+      "sizes": [
+        {
+          "name": "Regular (12 fl oz)",
+          "price": 5.25,
+          "default": true
+        },
+        {
+          "name": "Large (16 fl oz)",
+          "price": 6.0,
+          "default": false
+        }
+      ],
+      "options": [
+        {
+          "id": "vanilla-syrup",
+          "name": "Vanilla syrup",
+          "price_delta": 0.5,
+          "allergens": []
+        }
+      ],
+      "allergens": [
+        "milk"
+      ],
+      "dietary": {
+        "vegetarian": true,
+        "vegan": false,
+        "gluten_free": true
+      },
+      "available": true
+    },
+    {
+      "id": "mint-herbal-tea",
+      "category": "tea",
+      "name": "Mint Herbal Tea",
+      "description": "A caffeine-free peppermint infusion served hot.",
+      "price": 3.25,
+      "sizes": [
+        {
+          "name": "Regular (12 fl oz)",
+          "price": 3.25,
+          "default": true
+        },
+        {
+          "name": "Large (16 fl oz)",
+          "price": 3.75,
+          "default": false
+        }
+      ],
+      "options": [],
+      "allergens": [],
+      "dietary": {
+        "vegetarian": true,
+        "vegan": true,
+        "gluten_free": true
+      },
+      "available": true
+    },
+    {
+      "id": "butter-croissant",
+      "category": "bakery",
+      "name": "Butter Croissant",
+      "description": "A golden, flaky wheat pastry made with butter and an egg glaze.",
+      "price": 4.0,
+      "sizes": [
+        {
+          "name": "One pastry",
+          "price": 4.0,
+          "default": true
+        }
+      ],
+      "options": [],
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg"
+      ],
+      "dietary": {
+        "vegetarian": true,
+        "vegan": false,
+        "gluten_free": false
+      },
+      "available": true
+    },
+    {
+      "id": "almond-croissant",
+      "category": "bakery",
+      "name": "Almond Croissant",
+      "description": "A butter croissant filled with almond cream and topped with sliced almonds.",
+      "price": 5.25,
+      "sizes": [
+        {
+          "name": "One pastry",
+          "price": 5.25,
+          "default": true
+        }
+      ],
+      "options": [],
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg",
+        "almond"
+      ],
+      "dietary": {
+        "vegetarian": true,
+        "vegan": false,
+        "gluten_free": false
+      },
+      "available": true
+    },
+    {
+      "id": "chocolate-brownie",
+      "category": "bakery",
+      "name": "Chocolate Brownie",
+      "description": "A rich chocolate brownie made with wheat flour, butter, and eggs.",
+      "price": 4.25,
+      "sizes": [
+        {
+          "name": "One brownie",
+          "price": 4.25,
+          "default": true
+        }
+      ],
+      "options": [],
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg"
+      ],
+      "dietary": {
+        "vegetarian": true,
+        "vegan": false,
+        "gluten_free": false
+      },
+      "available": true
+    },
+    {
+      "id": "blueberry-muffin",
+      "category": "bakery",
+      "name": "Blueberry Muffin",
+      "description": "A soft blueberry muffin with a buttery crumble topping.",
+      "price": 4.5,
+      "sizes": [
+        {
+          "name": "One muffin",
+          "price": 4.5,
+          "default": true
+        }
+      ],
+      "options": [],
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg"
+      ],
+      "dietary": {
+        "vegetarian": true,
+        "vegan": false,
+        "gluten_free": false
+      },
+      "available": false
+    },
+    {
+      "id": "avocado-toast",
+      "category": "food",
+      "name": "Avocado Toast",
+      "description": "Mashed avocado, lemon, and chili flakes on dairy-free wheat sourdough.",
+      "price": 8.5,
+      "sizes": [
+        {
+          "name": "One slice",
+          "price": 8.5,
+          "default": true
+        },
+        {
+          "name": "Two slices",
+          "price": 12.5,
+          "default": false
+        }
+      ],
+      "options": [
+        {
+          "id": "cherry-tomatoes",
+          "name": "Cherry tomatoes",
+          "price_delta": 1.5,
+          "allergens": []
+        }
+      ],
+      "allergens": [
+        "wheat"
+      ],
+      "dietary": {
+        "vegetarian": true,
+        "vegan": true,
+        "gluten_free": false
+      },
+      "available": true
+    },
+    {
+      "id": "grilled-cheese",
+      "category": "food",
+      "name": "Grilled Cheese",
+      "description": "Cheddar melted between two slices of buttered wheat sourdough.",
+      "price": 7.5,
+      "sizes": [
+        {
+          "name": "One sandwich",
+          "price": 7.5,
+          "default": true
+        }
+      ],
+      "options": [
+        {
+          "id": "tomato-slices",
+          "name": "Tomato slices",
+          "price_delta": 0.75,
+          "allergens": []
+        }
+      ],
+      "allergens": [
+        "wheat",
+        "milk"
+      ],
+      "dietary": {
+        "vegetarian": true,
+        "vegan": false,
+        "gluten_free": false
+      },
+      "available": true
+    },
+    {
+      "id": "yogurt-granola-bowl",
+      "category": "food",
+      "name": "Yogurt & Granola Bowl",
+      "description": "Greek yogurt with berries, honey, and wheat-and-almond granola.",
+      "price": 6.75,
+      "sizes": [
+        {
+          "name": "One bowl",
+          "price": 6.75,
+          "default": true
+        }
+      ],
+      "options": [
+        {
+          "id": "extra-berries",
+          "name": "Extra berries",
+          "price_delta": 1.25,
+          "allergens": []
+        }
+      ],
+      "allergens": [
+        "milk",
+        "wheat",
+        "almond"
+      ],
+      "dietary": {
+        "vegetarian": true,
+        "vegan": false,
+        "gluten_free": false
+      },
+      "available": true
+    }
+  ]
+}
